@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #982B1C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #DAD4B5;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #DAD4B5;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: 0.5s;
+}
+
+.navbar a:hover {
+    color: #5B99C2;
+}
+
+.home {
+    height: 100vh;
+    background: linear-gradient(180deg, #800000, #ea7575);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-image {
+
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    box-sizing: content-box;
+    background: #982B1C;
+    border: 20px solid #DAD4B5;
+    outline: 20px solid #982B1C;
+}
+
+.home-image img {
+    position: relative;
+    bottom: 120px;
+    right: 50px;
+    max-width: 490px;
+
+}
+
+.home-content {
+    max-width: 600 px;
+    color: #DAD4B5;
+    text-align: right;
+}
+
+.home-content h1 {
+    font-size: 55px;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke: 1px #DAD4B5;
+    background-image: linear-gradient(#e89e95, #e89e95);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: text;
+    animation: animateText 4s linear infinite;
+
+}
+
+@keyframes animateText {
+    0%,
+    95%, 
+    100% {
+        background-position: -410px 0;
+    }
+    65%,
+    85% {
+        background-position: 0 0;
+    }
+}
+
+.home-content p {
+    font-size: 16px;
+    margin-top: 20px;
+    padding-left: 30%;
+    font-weight: bold;
+}
+
+.home-sci {
+    margin: 25px 0 40px;
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #DAD4B5;
+    border-radius: 50%;
+    font-size: 20 px;
+    color: #DAD4B5;
+    text-decoration: none;
+    margin-left: 12px;
+    transition: .5px;
+}
+
+.home-sci a:hover {
+    background-color: #5B99C2;
+    box-shadow: 0 0 10px #5B99C2;
+}
+ 
+
+.tentang h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: #DAD4B5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 100px; 
+    padding: 20px; 
+}
+
+.gambar {
+    flex: 1;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #982B1C;
+    border: 2px solid #DAD4B5;
+    border-radius: 20%;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.latarbawah {
+    background: linear-gradient(180deg, #ea7575, #800000);
+}
+.gambar img {
+    max-width: 50%; 
+    height: 180px;
+    padding: 30px;
+    margin-bottom: -20px;
+}
+
+.gambar h2 {
+    color: #fab2b2;
+    font-weight: bold;
+    text-decoration: underline; 
+}
+
+
+.gambar p {
+    margin-top: 10px; 
+    font-size: 16px; 
+    color: #DAD4B5;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.funfact {
+    background: linear-gradient(180deg, #800000,#ea7575);
+}
+
+.funfactbro {
+    font-size: 2rem;
+    text-align: center;
+    color: #DAD4B5;
+    padding-top: 80px;
+    
+}
+
+.funfact-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    padding: 100px;
+}
+
+.funfact-box {
+    display: flex;
+    background-color: #982B1C;
+    height: 300px;
+    padding-left: 50px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    align-items: center;
+}
+
+.funfact-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5rem 5rem;
+    gap: 100px;
+    justify-content: center;
+}
+
+.funfact-info h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #DAD4B5;
+    font-weight: bold;
+}
+.funfact-info img {
+    max-width: 100px;
+}
+
+.ending {
+    background: linear-gradient(180deg, #ea7575,#800000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-top: 20px;
+} 
+
+.ending h2 {
+    font-size: 50px;
+    color: #DAD4B5;
+    text-shadow: 0 0 5px #fff;
+}
+
+.ending h3 {
+    font-size: 20px;
+    color: #DAD4B5;
+    color: transparent;
+    -webkit-text-stroke: 1px #DAD4B5;
+    background-image: linear-gradient(#DAD4B5, #DAD4B5);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: text;
+    animation: animateText 4s linear infinite;
+
+}
+
+
+
+
